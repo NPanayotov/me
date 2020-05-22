@@ -1,0 +1,14 @@
+/* ------------------------------------------------------------ *\
+	Content
+\* ------------------------------------------------------------ */
+
+.content {
+	position: absolute;
+	top: 50%;
+	left: 10vw;
+	width: 630px;
+	max-width: 100%;
+	background: rgba(255, 255, 255, .4);
+	padding: 20px;
+	transform: translateY(-50%);
+}

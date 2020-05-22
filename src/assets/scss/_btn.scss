@@ -1,0 +1,45 @@
+/* ------------------------------------------------------------ *\
+	Button
+\* ------------------------------------------------------------ */
+
+.btn {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	cursor: pointer;
+	text-decoration: none;
+	appearance: none;
+	transition: background $trs-t, border-color $trs-t;
+
+	&--block {
+		display: block;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	&--white {
+		color: $white;
+		border: 2px solid $white;
+		font-weight: bold;
+		font-size: 30px;
+		height: 100px;
+		line-height: 96px;
+		padding: 0 40px;
+		min-width: 430px;
+		background: rgba(255, 255, 255, 0.2);
+
+		/* Mobile */
+
+		@media #{$mobile} {
+			min-width: 0;
+			font-size: 24px;
+			height: 80px;
+			line-height: 76px;
+		}
+
+		&:hover {
+			background: $black;
+			border-color: $black;
+		}
+	}
+}

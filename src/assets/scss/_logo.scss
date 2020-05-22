@@ -1,0 +1,16 @@
+/* ------------------------------------------------------------ *\
+	Logo
+\* ------------------------------------------------------------ */
+
+.logo {
+	font-family: $font-BigJohn;
+	text-decoration: none;
+	font-size: $h2;
+
+	/* Mobile */
+
+	@media #{$mobile} {
+		font-size: $h3;
+	}
+
+}

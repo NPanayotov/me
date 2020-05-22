@@ -1,0 +1,21 @@
+/* ------------------------------------------------------------ *\
+	Animations
+\* ------------------------------------------------------------ */
+
+@-webkit-keyframes scroll {
+	from { transform: translateY(0); }
+	to {
+		opacity: 0;
+		transform: translateY(8px);
+
+	}
+}
+
+@keyframes scroll {
+	from { transform: translateY(0); }
+	to {
+		opacity: 0;
+		transform: translateY(8px);
+
+	}
+}

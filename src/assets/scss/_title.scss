@@ -1,0 +1,22 @@
+/* ------------------------------------------------------------ *\
+	Title
+\* ------------------------------------------------------------ */
+
+.title {
+	&:after {
+		content: '';
+		height: 2px;
+		width: 86px;
+		background: $black;
+		margin: 45px auto 0;
+		display: block;
+	}
+
+	&--white:after {
+		background: $white;
+	}
+
+	 @at-root h2#{&}:after {
+		margin-top: 20px;
+	}
+}

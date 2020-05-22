@@ -1,0 +1,17 @@
+{
+  "name": "Nikolay Panayotov",
+  "short_name": "NP",
+  "theme_color": "#222222",
+  "background_color": "#222222",
+  "display": "fullscreen",
+  "Scope": "/",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "assets/images/favicon.ico",
+      "sizes": "72x72",
+      "type": "image/png"
+    }
+  ],
+  "splash_pages": null
+}

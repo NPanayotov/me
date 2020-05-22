@@ -1,0 +1,25 @@
+/* ------------------------------------------------------------ *\
+	List
+\* ------------------------------------------------------------ */
+
+[class^="list-"] {
+	list-style: none outside none;
+}
+
+/*  Contacts  */
+
+.list-contacts {
+	text-align: left;
+	font-size: 18px;
+	display: inline-block;
+
+	dt {
+		float: left;
+		min-width: 66px;
+		padding-right: 5px;
+	}
+
+	dd {
+		overflow: hidden;
+	}
+}

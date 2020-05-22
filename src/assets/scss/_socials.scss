@@ -1,0 +1,20 @@
+/* ------------------------------------------------------------ *\
+	Socials
+\* ------------------------------------------------------------ */
+
+.socials {
+	ul {
+		list-style: none outside none;
+		display: flex;
+
+	}
+
+	li ~ li {
+		padding-left: 10px;
+	}
+
+	.ico {
+		width: 30px;
+		height: 30px;
+	}
+}

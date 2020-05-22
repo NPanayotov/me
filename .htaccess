@@ -1,0 +1,11 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^panayotov.me$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^www.panayotov.me$
+RewriteCond %{REQUEST_URI} !build/
+RewriteRule (.*) /build/$1 [L]
+
+#Cache control
+
+<FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf|eot|woff|woff2|otf|ttf|svg)$">
+Header set Cache-Control "max-age=604800, public"
+</FilesMatch>

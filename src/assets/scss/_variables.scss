@@ -1,0 +1,50 @@
+/* ------------------------------------------------------------ *\
+	Variables
+\* ------------------------------------------------------------ */
+
+$font-family-sans-serif: Arial, Helvetica, sans-serif;
+$font-family-serif: Times, 'Times New Roman', serif;
+
+$font-Amble: 'Amble', sans-serif;
+$font-BigJohn: 'Big John Pro', serif;
+
+$font-size-base: 22px;
+$font-size-base-mobile: 18px;
+$line-height-base: 1.64;
+
+$shell-max-width: 768px;
+$shell-gutter: 0;
+
+$container-max-width: 1170px;
+$container-gutter: 15px;
+
+$responsive-xxs: 374px;
+$responsive-xs: 767px;
+$responsive-sm: 1023px;
+$responsive-md: 1200px;
+
+$black: #222222;
+$white: #fffefe;
+$gray: #615f69;
+
+$mobile-small: '(max-width: #{$responsive-xxs}) ';
+$mobile: '(max-width: #{$responsive-xs}) ';
+$tablet-portrait: '(max-width: #{$responsive-sm}) ';
+$small-desktop: '(max-width: #{$responsive-md}) ';
+$retina: '(min-resolution: 2dppx) ';
+
+// Usage
+// @media #{$small-desktop}
+
+$h1: 48px;
+$h2: 30px;
+$h3: 24px;
+$h4: 20px;
+$h5: 18px;
+$h6: 16px;
+
+$h1-mobile: 38px;
+$h2-mobile: 26px;
+$h3-mobile: 22px;
+
+$trs-t: .3s;

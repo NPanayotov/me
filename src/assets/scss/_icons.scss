@@ -1,0 +1,45 @@
+/* ------------------------------------------------------------ *\
+	Icons
+\* ------------------------------------------------------------ */
+
+.ico {
+	display: inline-block;
+	vertical-align: middle;
+	transition: color .3s;
+
+	&--facebook:hover {
+		color: #4968b4;
+	}
+
+	&--linkedin:hover {
+		color: #2674b3;
+	}
+
+	&--envelope:hover {
+		color: #e5e5e5;
+	}
+
+	&--phone:hover {
+		color: #e5e5e5;
+	}
+
+	&--mouse {
+		position: relative;
+		width: 30px;
+		height: 48px;
+		background: $white;
+		border-radius: 14px;
+		padding-top: 10px;
+
+		&:before {
+			content: '';
+			display: inline-block;
+			vertical-align: top;
+			width: 5px;
+			height: 12px;
+			background: $black;
+			border-radius: 40%;
+			animation: scroll 2s infinite;
+		}
+	}
+}
