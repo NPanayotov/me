@@ -12,6 +12,22 @@
 	var trident = ua.indexOf('Trident/');
 	var edge = ua.indexOf('Edge/');
 
+	/*
+	 * Typed js
+	 */
+	$('.js-type').each((idx, container) => {
+		const $this = $(container);
+		const words = $this.data('words');
+
+
+		const typed = new Typed($this[0], {
+			strings: words,
+			typeSpeed: 100,
+			backSpeed: 50,
+			loop: true,
+		});
+	});
+
 	/**
 	 * Wedding countdown
 	 */
@@ -83,12 +99,15 @@
 		});
 	};
 
-	jsScroll.addEventListener('click', function(event) {
-		const section = doc.querySelector(this.getAttribute('href'));
-		animateScroll(section, 1000, 'easeOutCubic', 10, top);
+	if (jsScroll !== null) {
+		jsScroll.addEventListener('click', function(event) {
+			const section = doc.querySelector(this.getAttribute('href'));
+			animateScroll(section, 1000, 'easeOutCubic', 10, top);
 
-		event.preventDefault();
-	});
+			event.preventDefault();
+		});
+	}
+
 
 	function changeHeader(scroll) {
 		let isDark = scroll >= heroHeight - headerHeight;
@@ -116,6 +135,8 @@
 		windowScroll = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
 
 		changeHeader(windowScroll);
+
+		$('body').addClass('is-loaded');
 	});
 
 })(window, document);

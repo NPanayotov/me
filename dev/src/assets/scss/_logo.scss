@@ -3,6 +3,7 @@
 \* ------------------------------------------------------------ */
 
 .logo {
+	position: relative;
 	font-family: $font-BigJohn;
 	text-decoration: none;
 	font-size: $h2;
@@ -13,4 +14,41 @@
 		font-size: $h3;
 	}
 
+	.logo__icon {
+		position: absolute;
+		top: -15px;
+		left: 100%;
+		stroke-dasharray: 0 2000;
+		opacity: 0;
+		transition: stroke-dasharray 2s ease-in-out .8s, opacity .1s .8s;
+
+		@media #{$mobile} {
+			width: 80px;
+			height: 75px;
+		}
+	}
+
+	span {
+		opacity: 0;
+		transition: opacity .4s ease-in-out;
+	}
+
+	span + span {
+		transition-delay: .4s;
+	}
+}
+
+
+
+.is-loaded {
+	.logo {
+		.logo__icon {
+			opacity: 1;
+			stroke-dasharray: 2000 2000;
+		}
+
+		span {
+			opacity: 1;
+		}
+	}
 }

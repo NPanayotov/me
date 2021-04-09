@@ -44,7 +44,9 @@
 		}
 
 		.logo {
-			position: static;
+			position: relative;
+			top: auto;
+			left: auto;
 			transform: none;
 		}
 

@@ -19,3 +19,15 @@
 
 	}
 }
+
+.flip {
+	display: inline-block;
+	vertical-align: top;
+	transform-origin: bottom right;
+	animation: flip 2s infinite;
+}
+
+@keyframes flip {
+	0, 100% { transform: rotate(0) }
+	50% { transform: rotate(-20deg) }
+}
